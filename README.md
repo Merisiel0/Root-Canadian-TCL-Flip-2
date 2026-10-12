@@ -70,4 +70,4 @@ There's this [pretty cool mouse](https://github.com/Offline-DC/FlipMouse) origin
 - [Megazip](https://mega.nz/folder/zLR2USCY#AKdEeXgjX8bljmgPPUABaw)
 
 ## Next Endeavour
-Phone is rooted, cool. But wouldn't it be nice to have full control over it? And I mean **full** controll. Having no knowledge about boot stages nor reverse engineering works, I've been experimenting with AI to try and figure out a way to build and boot the Linux kernel on this phone. Unfortunately I don't have much time at the moment to learn these things, I'll probably come back one day, but if anyone makes progress, do update me!
+Phone is rooted, cool. But wouldn't it be nice to have full control over it? And I mean **full** control. Having no knowledge about boot stages nor how reverse engineering works, I've been experimenting with AI to try and figure out a way to build and boot the Linux kernel on this phone. Unfortunately I don't have much time at the moment to learn these things, I'll probably come back one day, but if anyone makes progress, do update me!
