@@ -9,7 +9,7 @@ After figuring it out, I decided to make this guide for two reasons. First, to h
 I have much experience on Linux and terminals and a strong distaste of Windows. This whole guide assumes you have Linux and knows a bit about terminals. I myself used a CachyOS KDE laptop for this.
 
 ## Phone Details
-The Canadian TCL Flip 2 is a specific model, I've found few other people who attempted to crack it. If your phone's details matche mine, then my method should work for you.
+The Canadian TCL Flip 2 is a specific model, I've found few other people who attempted to crack it. If your phone's details match mine, then my method should work for you.
 
 | Property         | Value    |
 |------------------|----------|
@@ -32,7 +32,7 @@ These files are also available in this repository's *files* folder.
 ## Steps
 1. Poweroff your phone and remove the battery.
 2. Open a terminal and run `watch -n 0.2 "ls /dev | grep ACM"`
-3. Plug the phone and notice you can see `ttyACM0` appear and disappear twice. This is the BROM stage of booting, folowed by the preloader stage. If you put the battery back now, it'll continue the booting process with the Android OS. We want to interrupt that process so it instead enters fastboot.
+3. Plug the phone and notice you can see `ttyACM0` appear and disappear twice. This is the BROM stage of booting, followed by the preloader stage. If you put the battery back now, it'll continue the booting process with the Android OS. We want to interrupt that process so it instead enters fastboot.
 4. Prepare this command in another terminal, DON'T RUN IT YET: `sudo python3 mtk-bootseq.py FASTBOOT /dev/ttyACM0`
 5. Unplug and plug the phone in again. Wait for the first ttyACM0 to appear, then immediately start the previous command once it disappears. This is to run the command over the preloader stage and not the BROM stage.
 6. Put the battery back into the phone, it should boot to a black screen showing `=> FASTBOOT`.
